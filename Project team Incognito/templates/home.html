@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Covid Detection
+        </title>
+        <style>
+            form{
+                border-style: solid;
+                padding: 10px;
+                border-radius: 10px;
+                border-color: darkslategrey;
+                border-left-width: 3px;
+                border-right-width: 3px;
+                border-top-width: 3px;
+                border-bottom-width: 3px;
+                width: 33%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            
+            h1 {text-align: center;
+            color: lightslategray;}
+            img{
+                display: block;
+            }
+            label {
+                font-size: x-large;
+                color:indianred;
+            }
+            .text {
+                 font-size: 20px;
+                 padding-left: 50px;
+                 padding-top: 0px;
+            }
+            body { 
+                background-color: lightcyan;
+                color: black;  
+            }
+            .center {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            
+        </style>
+        </head>
+        <body>
+            <div style="background-color: lightblue;">
+                <div style="float: left"></div>
+            <img src="https://winaero.com/blog/wp-content/uploads/2019/09/Chrome-Incognito-Mode-Icon-256.png" style="height:50px">  
+            <div style="font-size: x-large;">
+                <b>Incognito</b>
+            </div>
+            </div>
+        <h1>
+           <b>COVID-19 DETECTION USING CHEST X-RAYS</b> 
+        </h1>
+        <img  src="https://content.presspage.com/uploads/2478/1920_chestxray3.jpg?10000" alt="covid19" class="center" style="width: 30%;">
+        <br>
+        <br>
+        <form style="text-align: center;" class="p-3 text-center" action="check", method="POST" enctype="multipart/form-data">
+            <label for="img"><b>GET YOUR RESULT AHEAD OF TIME!!</b></label><br><br>
+            <input class="form-control" type="file" name="my_image">
+            <input class="btn btn-primary mt-3" type="submit" value="Predict Image">
+        </form>
+        </body>
+
+</html>
